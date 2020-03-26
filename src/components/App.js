@@ -6,7 +6,7 @@ import notes from "../notes.js";
 
 function App() {
   const noteComponents = notes.map(n => (
-    <Note key={n.id} title={n.title} content={n.content} />
+    <Note key={n.key} title={n.title} content={n.content} />
   ));
   return (
     <div>
